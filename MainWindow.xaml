@@ -1,0 +1,29 @@
+﻿<Window
+    x:Class="QRCodeDemo.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:QRCodeDemo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Spacing="20">
+        <Image
+            x:Name="myImage"
+            Width="200"
+            Height="200"
+            HorizontalAlignment="Center"
+            Source="C:\Users\esoebfildine\source\repos\QRCodeDemo\Assets\QR-code-obituary.png"/>
+        
+        <TextBox
+            x:Name="myText"
+            Width="200"
+            PlaceholderText="Enter text to generate"
+            HorizontalAlignment="Center"/>
+        
+        <Button
+            x:Name="myButton"
+            Click="myButton_Click"
+            HorizontalAlignment="Center">Generate Code</Button>
+    </StackPanel>
+</Window>
